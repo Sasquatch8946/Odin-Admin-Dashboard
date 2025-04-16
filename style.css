@@ -12,13 +12,14 @@
 .sidebar {
     grid-column: 1;
     grid-row: 1 / 4;
-    background-color: lightskyblue;
+    background-color: rgb(23, 164, 252);
     height: 100vh;
     width: 100%;
     display: grid;
-    grid-template-rows: 1fr 3fr 3fr;
+    grid-template-rows: 1fr 4fr 4fr;
     padding: 16px;
-    gap: 10px;
+    gap: 40px;
+    box-sizing: border-box;
 }
 
 .photo {
@@ -34,6 +35,12 @@
     width: 15px;
     grid-column: 1;
     place-self: center;
+}
+
+.little-photo-dark {
+    background-color: black;
+    height: 15px;
+    width: 15px;
 }
 
 .sidebar-header {
@@ -70,3 +77,30 @@
     grid-template-rows: repeat(6, 1fr);
     align-items: center;
 }
+
+.header {
+    grid-column: 2;
+    grid-row: 1;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.header-row1 {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+}
+
+.header-row2 {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-template-columns: 1fr auto 1fr 1fr 1fr;
+}
+
+.greeting {
+    /* max-width: 200px;*/
+    display: flex;
+    flex-direction: column;
+}
+

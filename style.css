@@ -125,6 +125,7 @@ html, body {
     height: 100vh;
     min-height: 0;
     background-color: lightgrey;
+    column-gap: 16px;
 }
 
 .projects {

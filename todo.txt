@@ -2,3 +2,5 @@
    the two sets of buttons?
 [] How
 [] get rid of "100vh" all over the place"
+[] fix spacing between main-content sections
+[] add more styling to main-content cards

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -5,6 +7,10 @@
 
 html, body {
     height: 100%;
+}
+
+body {
+    font-family: 'Roboto';
 }
 
 .grid-container {
@@ -198,12 +204,21 @@ html, body {
 .card-container .card {
     background-color: white;
     min-height: 0; /* this got the projects div to fit inside main-content div (aka parent) */
-    box-shadow: inset 5px 0 gold, 2px 2px 2px -2px grey;
+    box-shadow: /*inset 5px 0 gold,*/ 2px 2px 2px -2px grey;
+    /* might have to use pseudo-element ::before instead of box-shadow
+    for the gold bar; otherwise, box-shadow gets rounded, which is NOT shown
+    in design */
+    /* https://stackoverflow.com/questions/57739144/straight-css-inset-shadow-with-border-radius */
     padding: 1em;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     border-radius: 5px;
+    overflow: hidden;
 }
+
+/* .card::before {
+    content: "";
+}*/
 
 .project-title,
 .subsection-header {

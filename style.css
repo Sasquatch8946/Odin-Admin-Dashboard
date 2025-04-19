@@ -116,6 +116,7 @@ html, body {
     /* max-width: 200px;*/
     display: flex;
     flex-direction: column;
+    font-weight: bold;
 }
 
 .main-content {
@@ -137,6 +138,7 @@ html, body {
 .announcements {
     display: grid;
     grid-template-rows: 1fr 1fr;
+    row-gap: 40px;
 }
 
 .announcement-subsection {
@@ -196,23 +198,26 @@ html, body {
 .card-container .card {
     background-color: white;
     min-height: 0; /* this got the projects div to fit inside main-content div (aka parent) */
-}
-
-.project-title {
-    align-self: end;
-}
-
-.subsection-header {
-    align-self: end;
-}
-
-.card-container .card {
-    border-radius: 3px;
-}
-
-.card {
+    box-shadow: inset 5px 0 gold, 2px 2px 2px -2px grey;
+    padding: 1em;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
+    border-radius: 5px;
+}
+
+.project-title,
+.subsection-header {
+    font-weight: bold;
+    align-self: end;
+    padding-bottom: 5px;
+}
+
+
+.icon-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 20px;
 }
 
 .subsection-cards div {
@@ -222,4 +227,8 @@ html, body {
 .header-button {
     color: white;
     border: none;
+}
+
+.card-title {
+    font-weight: bold;
 }

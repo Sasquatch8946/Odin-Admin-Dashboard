@@ -130,9 +130,8 @@ html, body {
 
 .projects {
     display: grid;
-    grid-template-rows: 1fr 10fr;
-    height: 100vh;
-    min-height: 0;
+    grid-template-rows: 30px 10fr;
+    min-height: 0; /* this stops the announcements section from overflowing for some reason... */
 }
 
 .announcements {
@@ -142,7 +141,7 @@ html, body {
 
 .announcement-subsection {
     display: grid;
-    grid-template-rows: 1fr 10fr;
+    grid-template-rows: 30px 10fr;
 }
 
 .announcement-subsection .subsection-cards {
@@ -183,6 +182,7 @@ html, body {
 .projects .project-heading {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    min-height: 0;
 }
 
 .card-container {
@@ -190,11 +190,12 @@ html, body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 15px;
-    height: 100vh;
+    min-height: 0;
 }
 
 .card-container .card {
     background-color: white;
+    min-height: 0; /* this got the projects div to fit inside main-content div (aka parent) */
 }
 
 .project-title {

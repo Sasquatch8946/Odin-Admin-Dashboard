@@ -209,15 +209,28 @@ body {
     for the gold bar; otherwise, box-shadow gets rounded, which is NOT shown
     in design */
     /* https://stackoverflow.com/questions/57739144/straight-css-inset-shadow-with-border-radius */
-    padding: 1em;
+    /* padding: 1em;*/
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    border-radius: 5px;
+    grid-template-columns: 10px 1fr;
+    border-radius: 10px;
     overflow: hidden;
 }
 
-/* .card::before {
+.card-main {
+    display: grid; 
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 1rem;
+    min-height: 0;
+}
+/*.card::before {
+    the padding messes with this
+    for that reason, may need to use absolute positioning */
+    /* create a wrapper around the card
+    make grid container
+    2 columns? 1st column is the shadow/border 
     content: "";
+    display: block;
+    width: 10px;
 }*/
 
 .project-title,
@@ -246,4 +259,19 @@ body {
 
 .card-title {
     font-weight: bold;
+    grid-column: 2 / -1;
+}
+
+.card p {
+    grid-column: 2 / -1;
+}
+
+.icon-container { 
+    grid-column: 2 / -1;
+}
+
+.card-sidebar { 
+    background-color: gold;
+    grid-column: 1;
+    grid-row: 1 / -1;
 }

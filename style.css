@@ -5,10 +5,6 @@
     margin: 0;
 }
 
-html, body {
-    height: 100%;
-}
-
 body {
     font-family: 'Roboto';
 }
@@ -23,8 +19,6 @@ body {
     grid-column: 1;
     grid-row: 1 / 4;
     background-color: rgb(23, 164, 252);
-    height: 100%;
-    width: 100%;
     display: grid;
     grid-template-rows: 1fr 4fr 4fr;
     padding: 16px;
@@ -154,6 +148,7 @@ body {
 
 .announcement-subsection .subsection-cards {
     display: grid;
+    background-color: white;
 }
 
 
@@ -248,7 +243,7 @@ body {
     gap: 20px;
 }
 
-.subsection-cards div {
+.subsection-cards .trending-row {
     background-color: white;
 }
 
@@ -274,4 +269,15 @@ body {
     background-color: gold;
     grid-column: 1;
     grid-row: 1 / -1;
+}
+
+.trending-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    place-items: center;
+}
+
+.userinfo {
+    display: flex;
+    flex-direction: column;
 }

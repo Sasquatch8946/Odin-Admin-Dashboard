@@ -211,9 +211,7 @@ body {
 
 .card-main {
     display: grid; 
-    grid-template-rows: 1fr 1fr 1fr;
     padding: 1rem;
-    /* min-height: 0;*/
 }
 /*.card::before {
     the padding messes with this

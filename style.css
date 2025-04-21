@@ -113,7 +113,6 @@ body {
 }
 
 .greeting {
-    /* max-width: 200px;*/
     display: flex;
     flex-direction: column;
     font-weight: bold;
@@ -130,7 +129,6 @@ body {
 .projects {
     display: grid;
     grid-template-rows: 30px 10fr;
-    /* min-height: 0; /* this stops the announcements section from overflowing for some reason... */
 }
 
 .announcements {
@@ -183,7 +181,6 @@ body {
 .projects .project-heading {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* min-height: 0;*/
 }
 
 .card-container {
@@ -191,18 +188,11 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 15px;
-    /* min-height: 0;*/
 }
 
 .card-container .card {
     background-color: white;
-    /* min-height: 0; /* this got the projects div to fit inside main-content div (aka parent) */
-    box-shadow: /*inset 5px 0 gold,*/ 2px 2px 2px -2px grey;
-    /* might have to use pseudo-element ::before instead of box-shadow
-    for the gold bar; otherwise, box-shadow gets rounded, which is NOT shown
-    in design */
-    /* https://stackoverflow.com/questions/57739144/straight-css-inset-shadow-with-border-radius */
-    /* padding: 1em;*/
+    box-shadow: 2px 2px 2px -2px grey;
     display: grid;
     grid-template-columns: 10px 1fr;
     border-radius: 10px;
@@ -213,16 +203,6 @@ body {
     display: grid; 
     padding: 1rem;
 }
-/*.card::before {
-    the padding messes with this
-    for that reason, may need to use absolute positioning */
-    /* create a wrapper around the card
-    make grid container
-    2 columns? 1st column is the shadow/border 
-    content: "";
-    display: block;
-    width: 10px;
-}*/
 
 .project-title,
 .subsection-header {

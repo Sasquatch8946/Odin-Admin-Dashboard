@@ -7,5 +7,7 @@
 [x] use pseudo-element to create straight bar on left side of project cards - make the bar 
     a grid column instead
 [x] set Roboto as font
-[] make it so that the project and announcement sections don't overflow their parent
-   when window is resized
+[x] make it so that the project and announcement sections don't overflow their parent
+   when window is resized - add to remove heigh: 100vh from main-content div.
+[] add padding to trending section without making container shrink to a size smaller than the 
+   announcements section.

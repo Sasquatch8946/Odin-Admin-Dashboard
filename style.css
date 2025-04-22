@@ -12,7 +12,7 @@ body {
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 10fr;
+    grid-template-rows: 1fr min-content;
 }
 
 .sidebar {
@@ -20,7 +20,7 @@ body {
     grid-row: 1 / 4;
     background-color: rgb(23, 164, 252);
     display: grid;
-    grid-template-rows: 1fr 4fr 4fr;
+    grid-template-rows: repeat(3, min-content);
     padding: 16px;
     gap: 40px;
     box-sizing: border-box;
@@ -52,6 +52,7 @@ body {
     align-items: center;
     grid-template-columns: 1fr 3fr;
     box-sizing: border-box;
+    height: max-content;
 }
 
 .photo {
@@ -68,8 +69,10 @@ body {
 .sidebar-buttons {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(6, min-content);
     align-items: center;
+    height: min-content;
+    gap: 20px;
 }
 
 .sidebar .button {
@@ -79,8 +82,10 @@ body {
 .sidebar-buttons2 {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(6, min-content);
     align-items: center;
+    height: min-content;
+    gap: 20px;
 }
 
 .header {
@@ -130,24 +135,27 @@ body {
 
 .projects {
     display: grid;
-    grid-template-rows: 30px 10fr;
+    grid-template-rows: min-content auto;
 }
 
 .announcements {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto auto;
     row-gap: 40px;
+    height: fit-content;
 }
 
 .announcement-subsection {
     display: grid;
     grid-template-rows: 30px 10fr;
     border-radius: 5px;
+    height: fit-content;
 }
 
 .announcement-subsection .subsection-cards {
     display: grid;
     background-color: white;
+    grid-template-rows: repeat(3, min-content);
     padding: 1rem;
     gap: 20px;
 }
@@ -161,7 +169,8 @@ body {
 }
 
 .subsection-card {
-    padding-bottom: 10px;
+   /* padding-bottom: 10px;*/
+   height: fit-content;
 }
 
 .subsection-cards .little-photo-dark {
@@ -188,7 +197,7 @@ body {
 .trending .subsection-cards {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
     background-color: white;
     place-items: center;
     padding: 1rem;

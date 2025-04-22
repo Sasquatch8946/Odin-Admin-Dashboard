@@ -1,5 +1,5 @@
 [] Make space between sidebar header and first set of buttons equal to the space dividing
-   the two sets of buttons?
+   the two sets of buttons? Adding padding to the header div exacerbated this problem...
 [x] get rid of "100vh" all over the place"
 [x] fix spacing between main-content sections --> set column-gap in main-content div
 [x] add more styling to main-content cards - in progress

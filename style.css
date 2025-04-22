@@ -27,24 +27,23 @@ body {
 }
 
 .photo {
-    background-color: white;
-    height: 30px;
-    width: 30px;
     grid-row: 1;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(306deg) brightness(103%) contrast(101%);
+
 }
 
 .little-photo {
-    background-color: white;
-    height: 15px;
-    width: 15px;
+    /* background-color: white;*/
+    /*height: 15px;
+    width: 15px;*/
     grid-column: 1;
     place-self: center;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(306deg) brightness(103%) contrast(101%);
 }
 
 .little-photo-dark {
-    background-color: black;
-    height: 15px;
-    width: 15px;
+    /* height: 15px;
+    width: 15px;*/
 }
 
 .sidebar-header {
@@ -72,7 +71,7 @@ body {
     grid-template-rows: repeat(6, min-content);
     align-items: center;
     height: min-content;
-    gap: 20px;
+    row-gap: 20px;
 }
 
 .sidebar .button {
@@ -85,7 +84,7 @@ body {
     grid-template-rows: repeat(6, min-content);
     align-items: center;
     height: min-content;
-    gap: 20px;
+    row-gap: 20px;
 }
 
 .header {
@@ -110,12 +109,17 @@ body {
     justify-self: end;
 }
 
+.header img {
+    justify-self: center;
+    border-radius: 50%;
+}
+
 
 .header-row2 {
     display: grid;
     grid-auto-flow: column;
     align-items: center;
-    grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 4fr repeat(3, 1fr);
     column-gap: 5px;
 }
 
@@ -135,7 +139,7 @@ body {
 
 .projects {
     display: grid;
-    grid-template-rows: min-content auto;
+    grid-template-rows: 30px auto;
 }
 
 .announcements {
@@ -209,11 +213,13 @@ body {
     background-color: lightgrey;
     border: none;
     padding-left: 10px;
+    box-sizing: border-box;
 }
 
 .header-row2 button {
     border-radius: 10px;
     background-color: rgb(23, 164, 252);
+    padding: 4px;
 }
 
 .header-row2 .little-photo-dark {
@@ -295,4 +301,14 @@ body {
 .userinfo {
     display: flex;
     flex-direction: column;
+}
+
+.header-row1 svg:nth-child(1) {
+    justify-self: end;
+    width: 20px;
+    height: 20px;
+}
+
+.trending img {
+    border-radius: 50%;
 }

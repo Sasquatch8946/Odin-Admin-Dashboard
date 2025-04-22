@@ -1,5 +1,6 @@
-[] Make space between sidebar header and first set of buttons equal to the space dividing
+[x] Make space between sidebar header and first set of buttons equal to the space dividing
    the two sets of buttons? Adding padding to the header div exacerbated this problem...
+   Used min-content for grid-rows. Relied solely on gap to achieve spacing.
 [x] get rid of "100vh" all over the place"
 [x] fix spacing between main-content sections --> set column-gap in main-content div
 [x] add more styling to main-content cards - in progress
@@ -9,5 +10,6 @@
 [x] set Roboto as font
 [x] make it so that the project and announcement sections don't overflow their parent
    when window is resized - add to remove heigh: 100vh from main-content div.
-[] add padding to trending section without making container shrink to a size smaller than the 
+[x] add padding to trending section without making container shrink to a size smaller than the 
    announcements section.
+[x] make "Your Projects" and "Announcements" line up. Set fixed pixel values to both grid items.

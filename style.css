@@ -100,9 +100,10 @@ body {
 .header-row1 {
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: 1fr 4fr 1fr 1fr 2fr;
+    grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
     align-items: center;
     column-gap: 5px;
+    place-items: center;
 }
 
 .header-row1 .little-photo-dark {
@@ -214,6 +215,10 @@ body {
     border: none;
     padding-left: 10px;
     box-sizing: border-box;
+}
+
+.searchbar {
+    width: 100%;
 }
 
 .header-row2 button {

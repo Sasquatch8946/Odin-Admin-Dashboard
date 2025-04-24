@@ -15,3 +15,4 @@
 [x] make "Your Projects" and "Announcements" line up. Set fixed pixel values to both grid items.
 [] Move searchbar and search icon to the left
 [] trending user info - align with flex-end?
+[] line up "Dashboard" with the reset of the button/nav labels

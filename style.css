@@ -33,18 +33,11 @@ body {
 }
 
 .little-photo {
-    /* background-color: white;*/
-    /*height: 15px;
-    width: 15px;*/
     grid-column: 1;
     place-self: center;
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(306deg) brightness(103%) contrast(101%);
 }
 
-.little-photo-dark {
-    /* height: 15px;
-    width: 15px;*/
-}
 
 .sidebar-header {
     display: grid;
